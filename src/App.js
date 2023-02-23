@@ -4,7 +4,7 @@ import UserDetails from './components/UserDetails';
 
 const App = () => {
   return (
-    <div>
+    <div className='container mx-auto' style={{width:'75%'}}>
        <Navbar/>
        <UserDetails/>
     </div>

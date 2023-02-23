@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const DeleteAllUser = () => {
-  return (
-    <div>DeleteAllUser</div>
-  )
-}
+  return <div>DeleteAllUser</div>;
+};
 
-export default DeleteAllUser
+export default DeleteAllUser;

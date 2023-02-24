@@ -26,3 +26,8 @@
 .custom-margin {
   margin-left: 10px;
 }
+.delete-icon {
+  color: red;
+  font-size: 1.5rem;
+}
+

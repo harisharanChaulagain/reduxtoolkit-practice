@@ -6,14 +6,18 @@ const userSlice = createSlice({
   reducers: {
     addUser(state, action) {
       state.push(action.payload);
-      console.log(action.payload);
     },
-    removeUser(state, action) {},
-    deleteUsers(state, action) {}
+    removeUser(state, action) {
+      const idToRemove = action.payload;
+      const indexToRemove = state.findIndex((user) => user.id === idToRemove);
+      if (indexToRemove !== -1) {
+        state.splice(indexToRemove, 1);
+      }
+    }
   },
 });
 
 console.log(userSlice.actions);
 
 export default userSlice.reducer ;
-export const {addUser} = userSlice.actions;
+export const {addUser, removeUser} = userSlice.actions;
